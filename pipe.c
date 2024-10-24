@@ -131,18 +131,6 @@ int main(int argc, char *argv[])
 				perror("execlp error");
 				exit(errno);
 			}
-
-			// //close pipes to be safe
-			// if (close(pipefd[0]) == -1) 
-			// {
-			// 	perror("pipe error");
-			// 	exit(errno);
-			// }
-			// if (close(pipefd[1]) == -1) 
-			// {
-			// 	perror("pipe error");
-			// 	exit(errno);
-			// }
 	}
 	
 
